@@ -1,8 +1,11 @@
 package linked_list;
 
 public class LinkedList {
-    public static void main(String[] args) {
+    public static SingleLinkedList createList() {
+        return new SingleLinkedList();
+    }
 
+    public static void main(String[] args) {
         SingleLinkedList list = new SingleLinkedList();
         list.insertLast(1);
         list.insertLast(2);
@@ -11,7 +14,6 @@ public class LinkedList {
         list.printList();
         list.deleteAt(5);
         list.printList();
-
     }
 }
 
