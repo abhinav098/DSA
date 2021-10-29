@@ -6,11 +6,11 @@ public class ArrangeCoins {
         System.out.println(row);
     }
 
-    public static int arrangeCoins(int n) {
+    public static int arrangeCoins(int num) {
         int row = 0;
-        for (int i = 0; i < n; i++) {
-            if (n > 0) {
-                n -=  i + 1;
+        for (int i = 0; i < num; i++) {
+            if (num > 0) {
+                num -=  i + 1;
                 row++;
             }
         }
