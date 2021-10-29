@@ -1,10 +1,18 @@
 import java.util.HashMap;
 
+/***
+ * Program will have two inputs
+ * 1. A text file / a long string.
+ * 2. Desired phrase/line
+ * Find if the desired phrase is possible to create from (1)
+ */
+
 public class FindWordCreationPossible {
     public static void main(String[] args) {
         String chars = "myabcdefghijklmnopqrstuvwxqwertasdfgzxcvbuiopjklhmnbvhdjeasdguitqowepejhkladsbvcnafdsafnkjlsad" +
                 "hgasjdklfmghajiuweqgaksldnlakslf casdfacfh adsklfdskjajfhsajkfhhh klf dkljsafh sdjklafhfasjaklljdsafhl " +
                 "fdjklasal adsflhdsalifafjaskvcxmnghads..........,,,,,,,'''''''''";
+
         String words = "The java.lang.Character.toLowerCase char ch converts the character argument to " +
                 "lowercase using case mapping information from the UnicodeData file ";
         System.out.println(possibleWordsCount(chars, words));
